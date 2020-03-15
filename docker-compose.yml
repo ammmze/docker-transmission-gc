@@ -1,0 +1,11 @@
+version: '3'
+services:
+    transmission-gc:
+        image: ammmze/transmission-gc:latest
+        build: ./
+        environment: 
+            - TRANSMISSION_URL
+            - TRANSMISSION_USERNAME
+            - TRANSMISSION_PASSWORD
+            - VERBOSE=false
+            - DRY_RUN=false
